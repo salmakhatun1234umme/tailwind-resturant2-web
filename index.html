@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .playfair {
+        font-family: "Playfair", serif;
+      }
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </header>
+  <body>
+    <!-- navbar start -->
+    <header class="bg-white shadow-md sticky top-0 left-0">
+      <nav
+        class="flex py-4 z-1000 container mx-auto px-12 justify-between items-center"
+      >
+        <div>
+          <a class="text-2xl playfair" href="#home">La Maison</a>
+        </div>
+        <div>
+          <button id="main_button" class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
+          </button>
+          <ul
+            id="main_menu"
+            class="absolute montserrat hidden md:flex gap-10 md:top-0 md:relative top-14 space-y-4 md:space-y-0 text-center w-full left-0 bg-white"
+          >
+            <li><a href="#home" class="hover:text-orange-500">Home</a></li>
+            <li><a href="#about" class="hover:text-orange-500">About</a></li>
+            <li>
+              <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+            </li>
+            <li><a href="#menu" class="hover:text-orange-500">Menu</a></li>
+            <li>
+              <a href="#contact" class="hover:text-orange-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- Banner section start -->
+    <section
+      id="home"
+      class="h-screen flex justify-center items-center"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+          url('images/resturantBanner.jpg') center/cover no-repeat;
+      "
+    >
+      <div class="text-center text-white">
+        <h1 class="text-5xl md:text-7xl playfair">La Maison</h1>
+        <p class="my-5 montserrat md:text-xl mb-10">
+          Fine Dining & Exceptional Experience
+        </p>
+        <a
+          class="montserrat bg-orange-500 py-4 px-6 rounded-3xl hover:bg-orange-700"
+          href="#menu"
+          >VIEW OUR MENU</a
+        >
+      </div>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- gallery section start -->
+
+    <section id="about" class="container mx-auto px-4 my-10">
+      <div class="md:grid justify-center items-center grid-cols-2 gap-10">
+        <div>
+          <img class="rounded-lg" src="images/gallery.jpg" alt="" />
+        </div>
+        <div>
+          <h2
+            class="playfair text-3xl md:text-4xl mt-5 md:mt-0 text-center md:text-start lg:text-5xl"
+          >
+            Gallery Section
+          </h2>
+          <p class="montserrat my-6 text-justify text-slate-500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            repellendus accusantium veritatis rerum, culpa pariatur impedit. Id
+            magni inventore amet fuga rerum! Ducimus, officia dolorem.
+          </p>
+          <p class="montserrat text-justify text-slate-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum perspiciatis, natus quaerat harum architecto.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- gallery section end -->
+    <!--specialist section start -->
+    <section id="gallery" class="container my-20 mx-auto px-12">
+      <h2 class="text-center playfair my-10 text-3xl md:text-5xl">
+        Our Specialties
+      </h2>
+      <div
+        class="grid -z-10 gap-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-5"
+      >
+        <div class="relative group overflow-hidden rounded-lg">
+          <img
+            class="group-hover:scale-110 transition duration-300"
+            src="images/about1.jpeg"
+            alt=""
+          />
+          <div
+            class="absolute bg-black bg-opacity-40 hover:bg-opacity-50 transition duration-300 inset-0 flex justify-center items-center"
+          >
+            <div class="text-white text-center">
+              <h2 class="md:text-4xl text-2xl playfair">Signature Dishes</h2>
+              <p class="montserrat text-xl">Crafted with passion</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg">
+          <img
+            class="group-hover:scale-110 transition duration-300"
+            src="images/about1.jpeg"
+            alt=""
+          />
+          <div
+            class="absolute bg-black bg-opacity-40 hover:bg-opacity-50 transition duration-300 inset-0 flex justify-center items-center"
+          >
+            <div class="text-white text-center">
+              <h2 class="md:text-4xl text-2xl playfair">Signature Dishes</h2>
+              <p class="montserrat text-xl">Crafted with passion</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg">
+          <img
+            class="group-hover:scale-110 transition duration-300"
+            src="images/about1.jpeg"
+            alt=""
+          />
+          <div
+            class="absolute bg-black bg-opacity-40 hover:bg-opacity-50 transition duration-300 inset-0 flex justify-center items-center"
+          >
+            <div class="text-white text-center">
+              <h2 class="md:text-4xl text-2xl playfair">Desserts</h2>
+              <p class="montserrat text-xl">Crafted with passion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- specialist section end -->
+    <!-- menus section start -->
+    <section id="menu" class="container mx-auto lg:px-32 md:px-12 px-4 my-20">
+      <h2 class="text-center playfair my-20 text-3xl md:text-5xl">Our Menu</h2>
+      <!-- left menu -->
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-5">
+          <h3 class="md:text-4xl text-2xl playfair">Starters</h3>
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="montserrat text-xl font-semibold">
+                French Onion Soup
+              </h4>
+              <p class="montserrat text-slate-500">
+                Caramelized onions,beef broth,gruyere
+              </p>
+            </div>
+            <span class="text-orange-500 text-xl">$16</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="montserrat text-xl font-semibold">
+                Escargots de Bourgogne
+              </h4>
+              <p class="montserrat text-slate-500">
+                Garlic,herb butter,parsley
+              </p>
+            </div>
+            <span class="text-orange-500 text-xl">$18</span>
+          </div>
+        </div>
+        <!-- right menu -->
+        <div class="space-y-5">
+          <h3 class="md:text-4xl text-2xl playfair">Main Courses</h3>
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="montserrat text-xl font-semibold">Coq au Vin</h4>
+              <p class="montserrat text-slate-500">
+                Caramelized onions,beef broth,gruyere
+              </p>
+            </div>
+            <span class="text-orange-500 text-xl">$34</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="montserrat text-xl font-semibold">
+                Escargots de Bourgogne
+              </h4>
+              <p class="montserrat text-slate-500">
+                Garlic,herb butter,parsley
+              </p>
+            </div>
+            <span class="text-orange-500 text-xl">$38</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menus section end -->
+
+    <!-- Contact section start -->
+
+    <section
+      id="contact"
+      class="container mx-auto px-12 w-3/4 bg-white shadow-md my-28"
+    >
+      <h2 class="text-center playfair my-20 text-3xl md:text-5xl">
+        Make a Reservation
+      </h2>
+      <div class="grid gap-10 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 py-10">
+        <div class="space-y-5">
+          <h3 class="montserrat text-2xl font-bold">Contact Information</h3>
+          <div>
+            <h4 class="font-bold">Address:</h4>
+            <p class="">123 Gourmet Street, Culinary District</p>
+          </div>
+          <div>
+            <h4 class="font-bold">Phone:</h4>
+            <p>+123456789</p>
+          </div>
+          <div>
+            <h4 class="font-bold">Email:</h4>
+            <p>ummesalma0056@gmail.com</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-2xl mb-5">Hours</h3>
+            <p class="text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+              obcaecati cumque possimus labore, ab veritatis cum vel explicabo
+              laboriosam unde?
+            </p>
+          </div>
+        </div>
+        <div>
+          <img class="h-full rounded-lg" src="images/gallery.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- footer start -->
+    <footer class="bg-black">
+      <div class="container px-4 mx-auto">
+        <div
+          class="grid gap-10 py-20 text-white lg:grid-cols-3 md:grid-cols-2 grid-cols-1"
+        >
+          <div class="space-y-5">
+            <h3 class="playfair text-3xl">La Maison</h3>
+            <p>Experience the art of fine dining</p>
+          </div>
+          <div class="space-y-5">
+            <h3 class="playfair text-3xl">Connect</h3>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+          </div>
+          <div class="space-y-3">
+            <h3 class="playfair text-3xl">Newsletter</h3>
+            <p>Subscribe for updates and special offers</p>
+            <input
+              class="w-full h-10 rounded-md bg-gray-800 p-4"
+              placeholder="Enter your email"
+              type="email"
+              name=""
+              id=""
+            />
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-white pb-10">
+        © 2024 La Maison.All rights reserved.
+      </p>
+    </footer>
+    <!-- footer ent -->
+    <script src="script.js.js"></script>
+  </body>
+</html>
